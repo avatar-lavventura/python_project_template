@@ -1,5 +1,10 @@
 * Guide
 
+#+begin_src bash
+sudo apt-get update
+sudo apt-get -y install flake8
+#+end_src
+
 ** Run:
 #+begin_src bash
 py bot/run.py
