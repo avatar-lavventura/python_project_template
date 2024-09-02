@@ -1,0 +1,38 @@
+repos:
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v4.6.0
+      hooks:
+          - id: check-yaml
+
+    - repo: https://github.com/asottile/seed-isort-config
+      rev: v2.2.0
+      hooks:
+          - id: seed-isort-config
+
+    - repo: https://github.com/pre-commit/mirrors-isort
+      rev: v5.10.1
+      hooks:
+          - id: isort
+
+    - repo: https://github.com/pre-commit/mirrors-mypy
+      rev: v1.11.2
+      hooks:
+          - id: mypy
+            verbose: true
+            entry: bash -c 'mypy "$@" || true' --
+
+    - repo: https://github.com/psf/black
+      rev: 24.8.0
+      hooks:
+          - id: black
+            name: black
+            exclude: "(.old_work/.*|.depreciated)/.*"
+
+    - repo: https://github.com/PyCQA/flake8
+      rev: 7.1.1
+      hooks:
+          - id: flake8
+            exclude: "(.old_work/.*|.depreciated)/.*"
+
+default_language_version:
+    python: python3
