@@ -1,0 +1,6 @@
+* Guide
+
+** Run:
+#+begin_src bash
+py bot/run.py
+#+end_src

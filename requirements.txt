@@ -1,0 +1,9 @@
+black==24.8.0
+colorama==0.4.6
+flake8==7.1.1
+flake8-mypy==17.8.0
+mypy-extensions==1.0.0
+packaging==24.1
+setuptools==73.0.1
+isort==5.13.2
+pre-commit==3.8.0
